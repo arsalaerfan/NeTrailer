@@ -1,3 +1,12 @@
+body {
+    background-color: blue;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
 button {
   display: inline-block;
   border-radius: 50%;
@@ -34,7 +43,7 @@ button1{
 }
 
 .button:hover span {
-  padding-right: 25px;
+  padding-right: 25px; 
 }
 
 .button:hover span:after {
