@@ -1,0 +1,150 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+  color: #65676f;
+  margin-left:0px;
+}
+a {
+  text-decoration: none;
+}
+nav {
+  position: absolute;
+  width: 100%;
+  top: 300px;
+  background-color: black;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 3;
+  transition: height 0.6s 0.6s;
+  left: 0;
+}
+.fixed-nav {
+  position: fixed;
+  height: 35px;
+  top: 0px;
+}
+.logo-box {
+  display: flex;
+  align-items: center;
+  transition: margin-left 0.6s
+}
+.fixed-logo-box {
+  margin-left: 20%;
+}
+.logo {
+  height: 25px;
+  width: 30px;
+  border: thick solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 35em;
+  transition: border-color 0.6s, transform 0.6s;
+}
+.logo div {
+  height: 2px;
+  width: 0px;
+  border: thick solid white;
+  transition: border-color 0.6s, transform 0.6s;
+}
+.logo-title {
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  padding: .0em;
+  transition: color 0.6s;
+}
+.fixed-logo {
+  border-color: #FF0059;
+  color: #FF0059;
+  transform: rotate(360deg);
+}
+.logo-box:hover .logo {
+  border-color: #E7EE0F;
+}
+.logo-box:hover .logo div {
+  border-color: #E7EE0F;
+  transform: rotate(180deg);
+}
+header {
+  position: relative;
+  height: 300px;
+  z-index: 1;
+  background-color: #2e313d;
+}
+.intro-background {
+  height: 100%;
+  width: 100%;
+  background-image: url("http://mulhollandpictures.com/wp-content/uploads/2015/07/stock.jpg");
+  background-size: cover;
+}
+body {
+  height:100%;
+  width: 100%;
+  background-image: url("https://image.freepik.com/vetores-gratis/papel-de-parede-metalico_23-2147489149.jpg");
+  background-size: cover;
+}
+.intro-heading {
+  border:solid black 10px;
+  padding:0px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  top: 0px;
+  height: 300px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.intro-heading h1 {
+  color: red;
+  font-size: 120px;
+  padding-top: 100px;
+  font-weight: bold;
+  text-shadow: 8px 5px  5px white;
+}
+.button {
+  display:flex;
+  display: inline-block;
+  border-radius: 20px;
+  background-color: red;
+  border:solid black 7px;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 70px;
+  padding: 20px;
+  height:180px;
+  width: 350px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 150px;
+  margin-left:5px;
+  text-shadow: 7px 7px 7px black;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 2;
+}
