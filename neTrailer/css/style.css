@@ -82,7 +82,7 @@ header {
 body {
   height:100%;
   width: 100%;
-  background-image: url("http://www.printawallpaper.com/upload/designs/white_pattern_detail.jpg");
+  background-image: url("https://image.freepik.com/vetores-gratis/papel-de-parede-metalico_23-2147489149.jpg");
   background-size: cover;
 }
 .intro-heading {
@@ -107,23 +107,20 @@ body {
 }
 .button {
   display:flex;
-  grid-template-areas:
-    "label label"
-    "label label";
-  grid-area:label;
   display: inline-block;
   border-radius: 20px;
   background-color: red;
   border:solid black 7px;
   color: #FFFFFF;
   text-align: center;
-  font-size: 60px;
+  font-size: 70px;
   padding: 20px;
-  height:150px;
+  height:180px;
   width: 350px;
   transition: all 0.5s;
   cursor: pointer;
   margin-top: 150px;
+  margin-left:5px;
   text-shadow: 7px 7px 7px black;
 }
 
