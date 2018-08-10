@@ -14,7 +14,12 @@ class MainPage(webapp2.RequestHandler):
     def get(self):
         about_template = the_jinja_env.get_template('Templates/about.html')
         self.response.write(about_template.render())
-
+        
+class HelpPage(webapp2.RedirectHandler):
+    def get (self):
+        about_template = the_jinja_env.get_template("Templates/help.html")
+        self.response.write(about_template.render())
+        
 class ComedyPage(webapp2.RequestHandler):
     def get(self):
         random_page_comedy = randint(0,4)
@@ -117,4 +122,5 @@ app = webapp2.WSGIApplication([
     ('/SelectedAction', ActionPage),
     ('/SelectedDrama', DramaPage),
     ('/SelectedHorror', HorrorPage),
+    ('/About', HelpPage),
 ], debug=True)
