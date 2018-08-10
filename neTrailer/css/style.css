@@ -12,7 +12,7 @@ nav {
   width: 100%;
   top: 300px;
   background-color: black;
-  height: 53px;
+  height: 65px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -157,14 +157,10 @@ body {
       border: none;
     padding: 15px 32px;
     text-align: center;
-    
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin-top: 10px;
+    background-color: black;
+    color: white;
 }
-.about_btn:hover {
-   background-color: #000000; /* black */
-    color: #D3D3D3;
-}
-
