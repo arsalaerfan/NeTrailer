@@ -17,7 +17,7 @@ class MainPage(webapp2.RequestHandler):
 
 class ComedyPage(webapp2.RequestHandler):
     def get(self):
-        random_page_comedy = randint(0,2)
+        random_page_comedy = randint(0,4)
         print "Im in the comedy function"
         if random_page_comedy == 0:
             print "choice1"
@@ -31,11 +31,19 @@ class ComedyPage(webapp2.RequestHandler):
             print "choice3"
             about_template = the_jinja_env.get_template('Templates/comedy3.html')
             self.response.write(about_template.render())    
-        
+        elif random_page_comedy ==3:
+            print "choice4"
+            about_template = the_jinja_env.get_template('Templates/comedy4.html')
+            self.response.write(about_template.render())
+        elif random_page_comedy ==4:
+            print "choice 5"
+            about_template = the_jinja_env.get_template('Templates/comedy5.html')
+            self.response.write(about_template.render()) 
+            
 class ActionPage(webapp2.RequestHandler):
     def get(self):
         print "im in the action function"
-        random_page_action = randint(0,2)
+        random_page_action = randint(0,4)
         if random_page_action == 0:
             print "im in choice 1"
             about_template = the_jinja_env.get_template('Templates/action.html')
@@ -48,13 +56,19 @@ class ActionPage(webapp2.RequestHandler):
             print "im in choice 3"
             about_template = the_jinja_env.get_template('Templates/action3.html')
             self.response.write(about_template.render())
-
-
+        elif random_page_action ==3:
+            print "im in choice 4"
+            about_template = the_jinja_env.get_template('Templates/action4.html')
+            self.response.write(about_template.render()) 
+        elif random_page_action == 4:
+            print "im in choice 5"
+            about_template = the_jinja_env.get_template('Templates/action5.html')
+            self.response.write(about_template.render()) 
             
 class DramaPage(webapp2.RequestHandler):
     def get(self):
         print "im in the drama function"
-        random_page_drama = randint(0,2)
+        random_page_drama = randint(0,4)
         if random_page_drama == 0:
             print "im in action 1"
             about_template = the_jinja_env.get_template('Templates/drama.html')
@@ -67,11 +81,17 @@ class DramaPage(webapp2.RequestHandler):
             print "im in the drama 3"
             about_template = the_jinja_env.get_template('Templates/drama3.html')
             self.response.write(about_template.render())
+        elif random_page_drama == 3:
+            about_template = the_jinja_env.get_template('Templates/drama4.html')
+            self.response.write(about_template.render())
+        elif random_page_drama == 4:
+            about_template = the_jinja_env.get_template('Templates/drama5.html')
+            self.response.write(about_template.render()) 
 
 class HorrorPage(webapp2.RequestHandler):
     def get(self):
         print "im in the horror function"
-        random_page_horror = randint(0,2)
+        random_page_horror = randint(0,4)
         if random_page_horror == 0:
             print "im in choice 1 for horror"
             about_template = the_jinja_env.get_template('Templates/horror.html')
@@ -84,6 +104,12 @@ class HorrorPage(webapp2.RequestHandler):
             print "im in choice 3 for horror"
             about_template = the_jinja_env.get_template('Templates/horror3.html')
             self.response.write(about_template.render())
+        elif random_page_horror == 3:
+            about_template = the_jinja_env.get_template('Templates/horror4.html')
+            self.response.write(about_template.render()) 
+        elif random_page_horror ==4:
+            about_template = the_jinja_env.get_template('Templates/horror5.html')
+            self.response.write(about_template.render()) 
 
 app = webapp2.WSGIApplication([
     ('/', MainPage),
