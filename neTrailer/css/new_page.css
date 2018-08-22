@@ -1,0 +1,129 @@
+body {
+	overflow-x: hidden;
+	overflow-style: none;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	height:100%;
+}
+
+.logocon {
+    font-family: 'Comfortaa', cursive;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	background: black;
+	animation: color 10s linear infinite;
+	user-select: none;
+	position: absolute;
+	z-index: 3;
+}
+
+.menu {
+	position: fixed;
+	z-index: 2;
+	width: 100vw;
+	height: 50px;
+	background: rgba(0,0,0,0.85);
+	color: #ccc;
+	text-align: center;
+	line-height: 50px;
+font-family: 'Comfortaa', cursive;
+    
+}
+
+
+
+.logo {
+font-family: 'Comfortaa', cursive;
+font-size: 100px;
+color: #fff;
+	cursor: default;
+}
+
+.hint {
+    position: fixed;
+	z-index: 4;
+	bottom: 10vh;
+	width: 100vw;
+	text-align: center;
+	color: rgba(255,255,255,0.6);
+font-family: 'Comfortaa', cursive;
+    
+}
+
+.content {
+	padding: 30px;
+	position: inherit;
+	top: 20vh;
+	height: 200vh;
+	font: 16px Ubuntu;
+
+}
+
+
+@keyframes color {
+  0%, 100% { background: black; }
+  25%      { background: red;  }  
+}
+.button
+{
+    font-size: 70px;
+    height:180px;
+    width: 460px;
+    color: white;
+    background-color: red;
+    padding: 50px;
+    border-radius: 50px;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    text-shadow: 7px 7px 7px black;
+}
+.button:hover
+{
+    animation: pulse-animation .4s alternate infinite;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+}
+@keyframes pulse-animation {
+  0%   {transform: scale(.7);}
+  100% {transform: scale(1.0);}
+}
+
+.revert_btn {
+
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    text-align: center;
+    float: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	background: rgba(0,0,0,0.85);
+}
+.abt_btn
+{
+   
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    text-align: center;
+    float: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	background: rgba(0,0,0,0.85); 
+}
+.heading{
+    width: 100%;
+    height: 100%;
+	animation: color 10s linear infinite;
+    font-family: 'Comfortaa', cursive;
+    color:white;
+}
